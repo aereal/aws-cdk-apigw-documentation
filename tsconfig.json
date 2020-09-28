@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2018"],
+    "module": "commonjs",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "ES2018"
+  },
+  "include": [
+    "src/",
+    "test/"
+  ],
+  "exclude": [
+    "cdk.out"
+  ]
+}

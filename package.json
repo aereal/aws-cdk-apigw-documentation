@@ -1,0 +1,86 @@
+{
+  "name": "cdk-api-gateway-documentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "aereal <aereal@aereal.org>",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": [
+      "@aereal/eslint-config/presets/typescript"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "createDefaultProgram": true,
+      "project": "./tsconfig.json"
+    }
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src",
+      "<rootDir>/test"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@aereal/eslint-config": "^0.1.1",
+    "@aws-cdk/assert": "^1.64.1",
+    "@aws-cdk/assets": "^1.64.1",
+    "@aws-cdk/aws-apigateway": "^1.64.1",
+    "@aws-cdk/aws-applicationautoscaling": "^1.64.1",
+    "@aws-cdk/aws-autoscaling-common": "^1.64.1",
+    "@aws-cdk/aws-certificatemanager": "^1.64.1",
+    "@aws-cdk/aws-cloudwatch": "^1.64.1",
+    "@aws-cdk/aws-codeguruprofiler": "^1.64.1",
+    "@aws-cdk/aws-ec2": "^1.64.1",
+    "@aws-cdk/aws-efs": "^1.64.1",
+    "@aws-cdk/aws-elasticloadbalancingv2": "^1.64.1",
+    "@aws-cdk/aws-events": "^1.64.1",
+    "@aws-cdk/aws-iam": "^1.64.1",
+    "@aws-cdk/aws-kms": "^1.64.1",
+    "@aws-cdk/aws-lambda": "^1.64.1",
+    "@aws-cdk/aws-logs": "^1.64.1",
+    "@aws-cdk/aws-route53": "^1.64.1",
+    "@aws-cdk/aws-s3": "^1.64.1",
+    "@aws-cdk/aws-s3-assets": "^1.64.1",
+    "@aws-cdk/aws-sqs": "^1.64.1",
+    "@aws-cdk/aws-ssm": "^1.64.1",
+    "@aws-cdk/cloud-assembly-schema": "^1.64.1",
+    "@aws-cdk/core": "^1.64.1",
+    "@aws-cdk/cx-api": "^1.64.1",
+    "@aws-cdk/region-info": "^1.64.1",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "constructs": "^3.0.4",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.6.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.2",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.0",
+    "typescript": "^4.0.3"
+  },
+  "peerDependencies": {
+    "@aws-cdk/aws-apigateway": "^1.64.1"
+  }
+}
