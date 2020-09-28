@@ -1,5 +1,5 @@
 {
-  "name": "cdk-api-gateway-documentation",
+  "name": "aws-cdk-apigw-documentation",
   "version": "1.0.0",
   "main": "index.js",
   "author": "aereal <aereal@aereal.org>",
