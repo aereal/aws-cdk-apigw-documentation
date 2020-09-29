@@ -9,6 +9,12 @@ on:
   schedule:
     - cron: '0 1 * * *'
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: lint
+        uses: reviewdog/action-eslint@v1
   ci:
     runs-on: ubuntu-latest
     steps:
@@ -37,8 +43,6 @@ jobs:
         with:
           name: coverage
           path: ./coverage
-      - name: lint
-        uses: reviewdog/action-eslint@v1
       - name: build
         run: yarn build
   coverage:
