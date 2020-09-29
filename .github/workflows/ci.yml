@@ -29,10 +29,33 @@ jobs:
       - name: install
         run: yarn install --frozen-lockfile
       - name: test
-        run: yarn test
+        run: yarn test:ci
         env:
           CI: true
+      - name: save coverage
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: ./coverage
       - name: lint
         uses: reviewdog/action-eslint@v1
       - name: build
         run: yarn build
+  coverage:
+    needs: ci
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      -
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: download coverage artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: coverage
+          path: ./coverage
+      - name: upload coverage
+        run: npx codecov
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
