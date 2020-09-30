@@ -94,5 +94,20 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/aereal/aws-cdk-apigw-documentation"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
