@@ -2,10 +2,14 @@
 # yarn lockfile v1
 
 
-"@aereal/eslint-config@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@aereal/eslint-config/-/eslint-config-0.1.1.tgz#e20327ec4c83daab9d010eca43ec2c05a08f36ba"
-  integrity sha512-Y3qceLCy2+WF+88ssTev5UkBz0gL3tMK5R64okzUcPFeCVpgjTtduKhOC38kLwtehJOF1cmVIZABdZkb9g4e7w==
+"@aereal/eslint-config@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@aereal/eslint-config/-/eslint-config-0.1.4.tgz#8c21e2385d8d1cd0c96b2f0edd86e796e1e160d3"
+  integrity sha512-xG7kbV0jPJdmrRI0DCLL3qYX2GTfCrE2ccurIPFul3+gnjcXuZL4Ipq4DwAFacFigaZpf5Sfene6wQ0rHbMa+g==
+  dependencies:
+    "@types/jest" "^26.0.14"
+    jest "^26.4.2"
+    ts-jest "^26.4.1"
 
 "@aws-cdk/assert@^1.64.1":
   version "1.64.1"
@@ -4845,10 +4849,10 @@ tr46@^2.0.2:
   dependencies:
     punycode "^2.1.1"
 
-ts-jest@^26.4.0:
-  version "26.4.0"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.4.0.tgz#903c7827f3d3bc33efc2f91be294b164400c32e3"
-  integrity sha512-ofBzoCqf6Nv/PoWb/ByV3VNKy2KJSikamOBxvR3E6eVdIw10GwAXoyvMWXXjZJK2s6S27ZE8fI+JBTnGaovl6Q==
+ts-jest@^26.4.0, ts-jest@^26.4.1:
+  version "26.4.1"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.4.1.tgz#08ec0d3fc2c3a39e4a46eae5610b69fafa6babd0"
+  integrity sha512-F4aFq01aS6mnAAa0DljNmKr/Kk9y4HVZ1m6/rtJ0ED56cuxINGq3Q9eVAh+z5vcYKe5qnTMvv90vE8vUMFxomg==
   dependencies:
     "@types/jest" "26.x"
     bs-logger "0.x"
