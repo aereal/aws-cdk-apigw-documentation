@@ -45,6 +45,14 @@ jobs:
           path: ./coverage
       - name: build
         run: yarn build
+      - name: build docs
+        if: github.ref == 'refs/heads/main'
+        run: yarn docs
+      - name: save docs
+        uses: actions/upload-artifact@v2
+        with:
+          name: docs
+          path: ./docs
   coverage:
     needs: ci
     runs-on: ubuntu-latest
@@ -63,3 +71,20 @@ jobs:
         run: npx codecov
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+  docs:
+    needs: ci
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: download docs artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: docs
+          path: ./docs
+      - name: publish docs
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
