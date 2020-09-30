@@ -35,7 +35,8 @@
   "scripts": {
     "test": "jest",
     "test:ci": "rm -rf ./coverage/ && jest --collectCoverage --coverageDirectory ./coverage/",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "docs": "rm -rf docs/; typedoc ./src"
   },
   "devDependencies": {
     "@aereal/eslint-config": "^0.1.1",
