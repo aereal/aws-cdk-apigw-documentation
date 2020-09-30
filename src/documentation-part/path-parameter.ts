@@ -5,6 +5,9 @@ import { Properties } from "./properties";
 
 const pattern = /\{(\w+)\}/;
 
+/**
+ * PathParameterDocumentationPart represents a documentation part of the path parameter
+ */
 export class PathParameterDocumentationPart extends DocumentationPart {
   private constructor(
     scope: Construct,
@@ -14,6 +17,12 @@ export class PathParameterDocumentationPart extends DocumentationPart {
     super(scope, id, props);
   }
 
+  /**
+   * Creates new PathParameterDocumentationPart from the method
+   *
+   * @param method - The method which the documentation part describe to
+   * @param properties - Additional properties
+   */
   public static fromMethod = (
     method: Method,
     properties: Properties

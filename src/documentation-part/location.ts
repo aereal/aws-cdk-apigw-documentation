@@ -1,3 +1,8 @@
+/**
+ * A location type which the documentation part describe to
+ *
+ * @see https://docs.aws.amazon.com/apigateway/api-reference/resource/documentation-part/#location
+ */
 export type DocumentationLocation =
   | ApiLocation
   | AuthorizerLocation

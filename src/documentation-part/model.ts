@@ -3,6 +3,9 @@ import { Construct } from "@aws-cdk/core";
 import { DocumentationPart, DocumentationPartProps } from "./base";
 import { Properties } from "./properties";
 
+/**
+ * ModelDocumentationPart represents a documentation part of the model
+ */
 export class ModelDocumentationPart extends DocumentationPart {
   private constructor(
     scope: Construct,
@@ -12,6 +15,12 @@ export class ModelDocumentationPart extends DocumentationPart {
     super(scope, id, props);
   }
 
+  /**
+   * Creates a new ModelDocumentationPart from the model
+   *
+   * @param model - The model which the documentation part describe to
+   * @param properties - Additional properties
+   */
   public static fromModel = (
     model: Model,
     properties: Properties

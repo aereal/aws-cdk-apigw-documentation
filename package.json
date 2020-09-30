@@ -6,7 +6,7 @@
   "license": "MIT",
   "eslintConfig": {
     "extends": [
-      "@aereal/eslint-config/presets/typescript"
+      "@aereal/eslint-config/presets/docs-typescript"
     ],
     "parserOptions": {
       "ecmaVersion": 2018,
