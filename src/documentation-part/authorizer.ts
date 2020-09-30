@@ -3,6 +3,9 @@ import { Construct } from "@aws-cdk/core";
 import { DocumentationPart, DocumentationPartProps } from "./base";
 import { Properties } from "./properties";
 
+/**
+ * AuthorizerDocumentationPart represents a documentation part of the Authorizer.
+ */
 export class AuthorizerDocumentationPart extends DocumentationPart {
   private constructor(
     scope: Construct,
@@ -12,6 +15,13 @@ export class AuthorizerDocumentationPart extends DocumentationPart {
     super(scope, id, props);
   }
 
+  /**
+   * Creates an AuthorizerDocumentationPart from the authorizer.
+   *
+   * @param restApi - The API which the documentation part describe to
+   * @param authorizer - The authorizer which the documentation part describe to
+   * @param properties - Additional OpenAPI properties
+   */
   public static fromAuthorizer = (
     restApi: RestApiBase,
     authorizer: Authorizer,

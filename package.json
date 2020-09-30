@@ -6,7 +6,7 @@
   "license": "MIT",
   "eslintConfig": {
     "extends": [
-      "@aereal/eslint-config/presets/typescript"
+      "@aereal/eslint-config/presets/docs-typescript"
     ],
     "parserOptions": {
       "ecmaVersion": 2018,
@@ -35,7 +35,8 @@
   "scripts": {
     "test": "jest",
     "test:ci": "rm -rf ./coverage/ && jest --collectCoverage --coverageDirectory ./coverage/",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "docs": "rm -rf docs/; typedoc ./src"
   },
   "devDependencies": {
     "@aereal/eslint-config": "^0.1.1",
@@ -80,6 +81,7 @@
     "jest": "^26.4.2",
     "prettier": "^2.1.2",
     "ts-jest": "^26.4.0",
+    "typedoc": "^0.19.2",
     "typescript": "^4.0.3"
   },
   "peerDependencies": {

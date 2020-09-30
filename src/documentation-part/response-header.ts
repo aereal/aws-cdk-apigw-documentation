@@ -4,6 +4,9 @@ import { DocumentationPart, DocumentationPartProps } from "./base";
 import { HttpStatusCode } from "./location";
 import { Properties } from "./properties";
 
+/**
+ * ResponseHeaderDocumentationPart represents a documentation part of the response header.
+ */
 export class ResponseHeaderDocumentationPart extends DocumentationPart {
   private constructor(
     scope: Construct,
@@ -13,6 +16,14 @@ export class ResponseHeaderDocumentationPart extends DocumentationPart {
     super(scope, id, props);
   }
 
+  /**
+   * Creates new ResponseHeaderDocumentationPart from the method and status code.
+   *
+   * @param method - The method which the documentation part describe to
+   * @param statusCode - A status code
+   * @param name - A header name
+   * @param properties - Additional properties
+   */
   public static fromMethod = (
     method: Method,
     statusCode: HttpStatusCode,

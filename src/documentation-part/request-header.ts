@@ -3,6 +3,9 @@ import { Construct } from "@aws-cdk/core";
 import { DocumentationPart, DocumentationPartProps } from "./base";
 import { Properties } from "./properties";
 
+/**
+ * RequestHeaderDocumentationPart represents a documentation part of the request header
+ */
 export class RequestHeaderDocumentationPart extends DocumentationPart {
   private constructor(
     scope: Construct,
@@ -12,6 +15,13 @@ export class RequestHeaderDocumentationPart extends DocumentationPart {
     super(scope, id, props);
   }
 
+  /**
+   * Creates new RequestHeaderDocumentationPart from the method.
+   *
+   * @param method - The method which the documentation part describe to
+   * @param parameterName - A parameter name
+   * @param properties - Additional properties
+   */
   public static fromMethod = (
     method: Method,
     parameterName: string,
