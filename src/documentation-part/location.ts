@@ -46,7 +46,7 @@ export interface PathParameterLocation {
   readonly type: "PATH_PARAMETER";
   readonly path?: string;
   readonly method?: HttpMethod;
-  readonly name?: string;
+  readonly name: string;
 }
 
 export interface QueryParameterLocation {
@@ -60,7 +60,7 @@ export interface RequestHeaderLocation {
   readonly type: "REQUEST_HEADER";
   readonly path?: string;
   readonly method?: HttpMethod;
-  readonly name?: string;
+  readonly name: string;
 }
 
 export interface RequestBodyLocation {
@@ -81,7 +81,7 @@ export interface ResponseHeaderLocation {
   readonly type: "RESPONSE_HEADER";
   readonly path?: string;
   readonly method?: HttpMethod;
-  readonly name?: string;
+  readonly name: string;
   readonly statusCode?: HttpStatusCode;
 }
 
