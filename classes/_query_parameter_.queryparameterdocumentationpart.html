@@ -188,7 +188,7 @@
 						<aside class="tsd-sources">
 							<p>Overrides <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#constructor">constructor</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/aereal/aws-cdk-apigw-documentation/blob/ac6fe32/src/documentation-part/query-parameter.ts#L9">src/documentation-part/query-parameter.ts:9</a></li>
+								<li>Defined in <a href="https://github.com/aereal/aws-cdk-apigw-documentation/blob/16dc797/src/documentation-part/query-parameter.ts#L9">src/documentation-part/query-parameter.ts:9</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -218,7 +218,7 @@
 					<p>Implementation of <a href="../interfaces/_base_.idocumentationpart.html">IDocumentationPart</a>.<a href="../interfaces/_base_.idocumentationpart.html#documentationpartid">documentationPartId</a></p>
 					<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#documentationpartid">documentationPartId</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/aereal/aws-cdk-apigw-documentation/blob/ac6fe32/src/documentation-part/base.ts#L37">src/documentation-part/base.ts:37</a></li>
+						<li>Defined in <a href="https://github.com/aereal/aws-cdk-apigw-documentation/blob/16dc797/src/documentation-part/base.ts#L37">src/documentation-part/base.ts:37</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -230,9 +230,20 @@
 					<p>Implementation of <a href="../interfaces/_base_.idocumentationpart.html">IDocumentationPart</a>.<a href="../interfaces/_base_.idocumentationpart.html#env">env</a></p>
 					<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#env">env</a></p>
 					<ul>
-						<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:80</li>
+						<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:97</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The environment this resource belongs to.</p>
+					</div>
+					<p>For resources that are created and managed by the CDK
+						(generally, those created by creating new class instances like Role, Bucket, etc.),
+						this is always the same as the environment of the stack they belong to;
+						however, for imported resources
+						(those obtained from static methods like fromRoleArn, fromBucketName, etc.),
+					that might be different than the stack they were imported into.</p>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 				<a name="node" class="tsd-anchor"></a>
@@ -242,7 +253,7 @@
 					<p>Implementation of <a href="../interfaces/_base_.idocumentationpart.html">IDocumentationPart</a>.<a href="../interfaces/_base_.idocumentationpart.html#node">node</a></p>
 					<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#node">node</a></p>
 					<ul>
-						<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:52</li>
+						<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:54</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -258,13 +269,12 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#physicalname">physicalName</a></p>
 					<ul>
-						<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:93</li>
+						<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:109</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Returns a string-encoded token that resolves to the physical name that
-						should be passed to the CloudFormation resource.</p>
+						<p>(experimental) Returns a string-encoded token that resolves to the physical name that should be passed to the CloudFormation resource.</p>
 					</div>
 					<p>This value will resolve to one of the following:</p>
 					<ul>
@@ -287,9 +297,14 @@
 					<p>Implementation of <a href="../interfaces/_base_.idocumentationpart.html">IDocumentationPart</a>.<a href="../interfaces/_base_.idocumentationpart.html#stack">stack</a></p>
 					<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#stack">stack</a></p>
 					<ul>
-						<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:79</li>
+						<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:86</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The stack in which this resource is defined.</p>
+					</div>
+				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
@@ -305,7 +320,7 @@
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#generatephysicalname">generatePhysicalName</a></p>
 							<ul>
-								<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:97</li>
+								<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:119</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -323,13 +338,12 @@
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#getresourcearnattribute">getResourceArnAttribute</a></p>
 							<ul>
-								<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:129</li>
+								<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:143</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Returns an environment-sensitive token that should be used for the
-								resource&#39;s &quot;ARN&quot; attribute (e.g. <code>bucket.bucketArn</code>).</p>
+								<p>(experimental) Returns an environment-sensitive token that should be used for the resource&#39;s &quot;ARN&quot; attribute (e.g. <code>bucket.bucketArn</code>).</p>
 							</div>
 							<p>Normally, this token will resolve to <code>arnAttr</code>, but if the resource is
 								referenced across environments, <code>arnComponents</code> will be used to synthesize
@@ -345,17 +359,13 @@
 							<li>
 								<h5>arnAttr: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>The CFN attribute which resolves to the ARN of the resource.
-										Commonly it will be called &quot;Arn&quot; (e.g. <code>resource.attrArn</code>), but sometimes
-									it&#39;s the CFN resource&#39;s <code>ref</code>.</p>
+									<p>The CFN attribute which resolves to the ARN of the resource.</p>
 								</div>
 							</li>
 							<li>
 								<h5>arnComponents: <span class="tsd-signature-type">ArnComponents</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>The format of the ARN of this resource. You must
-										reference <code>this.physicalName</code> somewhere within the ARN in order for
-									cross-environment references to work.</p>
+									<p>The format of the ARN of this resource.</p>
 								</div>
 							</li>
 						</ul>
@@ -374,13 +384,12 @@
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#getresourcenameattribute">getResourceNameAttribute</a></p>
 							<ul>
-								<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:110</li>
+								<li>Defined in node_modules/@aws-cdk/core/lib/resource.d.ts:130</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Returns an environment-sensitive token that should be used for the
-								resource&#39;s &quot;name&quot; attribute (e.g. <code>bucket.bucketName</code>).</p>
+								<p>(experimental) Returns an environment-sensitive token that should be used for the resource&#39;s &quot;name&quot; attribute (e.g. <code>bucket.bucketName</code>).</p>
 							</div>
 							<p>Normally, this token will resolve to <code>nameAttr</code>, but if the resource is
 								referenced across environments, it will be resolved to <code>this.physicalName</code>,
@@ -395,8 +404,7 @@
 							<li>
 								<h5>nameAttr: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>The CFN attribute which resolves to the resource&#39;s name.
-									Commonly this is the resource&#39;s <code>ref</code>.</p>
+									<p>The CFN attribute which resolves to the resource&#39;s name.</p>
 								</div>
 							</li>
 						</ul>
@@ -416,12 +424,12 @@
 							<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#onprepare">onPrepare</a></p>
 							<p>Overrides Construct.onPrepare</p>
 							<ul>
-								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:73</li>
+								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:78</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Perform final modifications before synthesis</p>
+								<p>Perform final modifications before synthesis.</p>
 							</div>
 							<p>This method can be implemented by derived constructs in order to perform
 								final changes before synthesis. prepare() will be called after child
@@ -445,7 +453,7 @@
 							<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#onsynthesize">onSynthesize</a></p>
 							<p>Overrides Construct.onSynthesize</p>
 							<ul>
-								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:82</li>
+								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:87</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -480,7 +488,7 @@
 							<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#onvalidate">onValidate</a></p>
 							<p>Overrides Construct.onValidate</p>
 							<ul>
-								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:62</li>
+								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:67</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -506,12 +514,12 @@
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#prepare">prepare</a></p>
 							<ul>
-								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:102</li>
+								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:107</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Perform final modifications before synthesis</p>
+								<p>Perform final modifications before synthesis.</p>
 							</div>
 							<p>This method can be implemented by derived constructs in order to perform
 								final changes before synthesis. prepare() will be called after child
@@ -534,7 +542,7 @@
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#synthesize">synthesize</a></p>
 							<ul>
-								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:111</li>
+								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:116</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -591,7 +599,7 @@
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#validate">validate</a></p>
 							<ul>
-								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:91</li>
+								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:96</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -616,7 +624,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/aereal/aws-cdk-apigw-documentation/blob/ac6fe32/src/documentation-part/query-parameter.ts#L24">src/documentation-part/query-parameter.ts:24</a></li>
+								<li>Defined in <a href="https://github.com/aereal/aws-cdk-apigw-documentation/blob/16dc797/src/documentation-part/query-parameter.ts#L24">src/documentation-part/query-parameter.ts:24</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -663,12 +671,12 @@
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_base_.documentationpart.html">DocumentationPart</a>.<a href="_base_.documentationpart.html#isconstruct">isConstruct</a></p>
 							<ul>
-								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:48</li>
+								<li>Defined in node_modules/@aws-cdk/core/lib/construct-compat.d.ts:50</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Return whether the given object is a Construct</p>
+								<p>Return whether the given object is a Construct.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
