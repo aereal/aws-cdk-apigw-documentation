@@ -188,5 +188,25 @@ describe("DocumentationPart", () => {
         },
       });
     });
+
+    test("from resource", () => {
+      const app = new App();
+      const stack = new Stack(app, "test-stack");
+      const api = new RestApi(stack, "Api");
+      api.root.addMethod("GET");
+
+      const user = api.root.addResource("users").addResource("{userId}");
+      PathParameterDocumentationPart.fromResource(user, {
+        description: "user id",
+      });
+      expect(stack).toHaveResourceLike("AWS::ApiGateway::DocumentationPart", {
+        Properties: JSON.stringify({ description: "user id" }),
+        Location: {
+          Type: "PATH_PARAMETER",
+          Path: "/users/{userId}",
+          Name: "userId",
+        },
+      });
+    });
   });
 });
